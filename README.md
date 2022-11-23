@@ -52,13 +52,13 @@ This module when imported allows you to do the following functions:
   deleteCollection(URI, db_name, collection_name)
   ```
 - Imports a .csv file at specified path to specified database collection. Returns: count of the documants in the collection
-```
-importCSV(URI, csv_path, db_name, collection_name)
-```
+  ```
+  importCSV(URI, csv_path, db_name, collection_name)
+  ```
 -  Uses a change stream to watch for changes in a specified database collection
-```
-watchCollection(URI, db_name, collection_name)
-```
+    ```
+    watchCollection(URI, db_name, collection_name)
+    ```
 
 ## Team 4
 ```
