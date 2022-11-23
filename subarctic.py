@@ -88,9 +88,14 @@ def writeArduinoData(URI, db_name, collection_name, serial_port, baud_rate):
 
     ser = serial.Serial(s_port, b_rate)
     while True:
+        start_time = time.time()
+        elapsed_time=time.time() - start_time
+       
         line = ser.readline()
+
         n = line.decode().strip().split(",")[0]
-        timestamp = time.time()
+        timestamp = elapsed_time
+        json = {"value": n, "timestamp" : timestamp}
         coll.insert_one(json)
         print(json)
         time.sleep(0.05)
