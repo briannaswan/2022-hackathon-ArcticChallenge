@@ -19,7 +19,7 @@ The user has to create a MongoDB account, create a database, and retrieve the co
 
 ### How to:
 
-### Setup
+#### Setup
 1. Make sure you have the required Python libraries. 
 2. If not,  open up a terminal or command prompt and navigate to the directory of your  project. Once there, type the following:
 ```
@@ -36,9 +36,11 @@ pip install -r requirements.txt
 ```
 git clone https://github.com/briannaswan/2022-hackathon-ArcticChallenge.git
 ```
-2. ....... update .....
-3. ....... update .....
+2. Create a Python script that does the tasks you want, utilizing the subarctic module. Otherwise, you can run example.py to create a new collection and import data to it.
 
+```
+python example.py
+```
 
 #### Using subarctic.py
 This module when imported allows you to do the following functions: 
@@ -59,7 +61,10 @@ This module when imported allows you to do the following functions:
     ```
     watchCollection(URI, db_name, collection_name)
     ```
-
+-  writeArduinoData(URI, db_name, collection_name, serial_port, baud_rate)  
+   ```
+   Taking data from an Arduino connected via the Serial Port to a PC (USB), writes to a specified collection in the database.
+   ```
 ## Team 4
 ```
 Brianna Swan
