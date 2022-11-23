@@ -12,10 +12,10 @@ training, and to collect sample data with the framework and make standardized da
 - MongoDB account and database
 
 ### Overview:
-The user has to create a MongoDB account and retrieve the connection URI, create a database and with subarctic python module is possible to:
-Create a collection
-Delete a collection
-Insert data into a collection, from .csv file
+The user has to create a MongoDB account, create a database, and retrieve the connection URI. With the subarctic python module, it is possible to:
+- Create a collection
+- Delete a collection
+- Insert data into a collection, from .csv file
 
 The user only needs to import subarctic into his/her script without dealing with low-level pymongo library.
 
