@@ -34,7 +34,7 @@ pip install -r requirements.txt
 #### Data Framework / Storage
 1. Clone this repositorty, and navigate to the directory the files are stored.
 ```
-git clone blah-blah-blah
+git clone https://github.com/briannaswan/2022-hackathon-ArcticChallenge.git
 ```
 2. ....... update .....
 3. ....... update .....
