@@ -9,6 +9,8 @@ from bson.json_util import dumps
 
 # Needed for reading the data from the Arduino
 import time
+import datetime
+
 import serial
 import serial.tools.list_ports
 
@@ -87,15 +89,16 @@ def writeArduinoData(URI, db_name, collection_name, serial_port, baud_rate):
     b_rate = baud_rate
 
     ser = serial.Serial(s_port, b_rate)
+    start_time = datetime.datetime.now()
+
     while True:
-        start_time = time.time()
-        elapsed_time=time.time() - start_time
-       
         line = ser.readline()
+        end_time = datetime.datetime.now()
+        time_diff = (end_time - start_time)
+        execution_time = time_diff.total_seconds() * 1000
 
         n = line.decode().strip().split(",")[0]
-        timestamp = elapsed_time
-        json = {"value": n, "timestamp" : timestamp}
+        json = {"value": n, "Msec" : execution_time}
         coll.insert_one(json)
         print(json)
         time.sleep(0.05)
