@@ -57,14 +57,13 @@ This module when imported allows you to do the following functions:
     ```
     watchCollection(URI, db_name, collection_name)
     ```
--  writeArduinoData(URI, db_name, collection_name, serial_port, baud_rate)  
+-  Taking data from an Arduino connected via the Serial Port to a PC (USB), writes to a specified collection in the database.
    ```
-   Taking data from an Arduino connected via the Serial Port to a PC (USB), writes to a specified collection in the database.
+   writeArduinoData(URI, db_name, collection_name, serial_port, baud_rate)  
    ```
 ## Team 4
 ```
 Brianna Swan
 Marianna Oleotti
 Muiz Raheem
-Sakib Islam
 ```
