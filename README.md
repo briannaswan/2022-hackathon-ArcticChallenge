@@ -69,7 +69,7 @@ This module when imported allows you to do the following functions:
   
   Our team was granted First Prize in the Hackathon. 
  
-## Team 4: SUBARCTIC MONKEYS
+## Developers:
 ```
 Brianna Swan
 Marianna Oleotti
