@@ -91,6 +91,7 @@ def writeArduinoData(URI, db_name, collection_name, serial_port, baud_rate):
     ser = serial.Serial(s_port, b_rate)
     start_time = datetime.datetime.now()
 
+    # Timestamp for heartData in 
     while True:
         line = ser.readline()
         end_time = datetime.datetime.now()
@@ -98,7 +99,7 @@ def writeArduinoData(URI, db_name, collection_name, serial_port, baud_rate):
         execution_time = time_diff.total_seconds() * 1000
 
         n = line.decode().strip().split(",")[0]
-        json = {"value": n, "Msec" : execution_time}
+        json = {"value": n, "timestamp" : execution_time}
         coll.insert_one(json)
         print(json)
         time.sleep(0.05)
