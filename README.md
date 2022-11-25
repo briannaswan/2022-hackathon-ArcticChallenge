@@ -63,7 +63,7 @@ This module when imported allows you to do the following functions:
    ```
    
   #### Final Presentation & Data Visualization
-  During the final presandemonstration, we ran a live demonstration. While wearing the Hololens2 and the ECG sensors, one developer played Basket Bin.
+  During the final presentation, we ran a live demonstration. While wearing the Hololens2 and the ECG sensors, one developer played Basket Bin.
   Using two computers, the other developers ran a script which took the data from the Arduino and wrote it to the database in real-time, and
   subarctic_graphs.py to watch for database updates and plot the data on a graph in real-time.
   
